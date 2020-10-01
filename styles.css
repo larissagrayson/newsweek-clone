@@ -33,9 +33,7 @@
     font-weight: 600;
 }
 
-.us {
-    border: 2px dashed orange;
-}
+
 
 .test {
     border: 2px solid purple;
@@ -168,6 +166,31 @@ Card Styling
     font-size: 16px;
     font-weight: bold;
 }
+
+.img-wrapper {
+    position: relative;
+}
+
+.img-cat {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.img-cat:hover {
+    text-decoration: none;
+}
+
+.img-cat span {
+    font-size: 14px;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 8px 15px 9px;
+    color: #ff2210;
+    font-weight: bold;
+
+}
+
 
 
 
@@ -319,13 +342,23 @@ Magazine Section
   
 }
 
+.wrapper {
+    position: relative;
+}
 
+.featured-cat {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/*
 .featured-cat {
     display: inline-block;
     position: relative;
     z-index: 2;
     bottom: 30px;
-}
+}*/
 
 .featured-cat:hover {
     text-decoration: none;
@@ -335,9 +368,10 @@ Magazine Section
     font-size: 16px;
     text-transform: uppercase;
     background: rgba(255, 255, 255, 0.9);
+    padding: 2px;
     color: #ff2210;
     font-weight: bold;
-    padding: 10px;  
+
 }
 
 .featured-link {
@@ -350,9 +384,9 @@ Magazine Section
     font-weight: bold;
     background: #f4f5f6;
 
-    position: relative;
+  /*  position: relative;
     z-index: 3;
-    bottom: 28px;
+    bottom: 28px;*/
 }
 
 .featured-link:hover {
@@ -393,6 +427,41 @@ Magazine Section
     text-decoration:none;
 }
 
+/*********
+News Sections
+************/
+
+.news-section-header a {
+    display:block;
+    padding-top: 25px;
+    padding-bottom: 11px;
+    color: #ff2210;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-top: 1px solid #d9d9d9;
+}
+
+
+.news {
+    font-size: 18px;
+}
+
+.news-aside-link {
+    font-size: 15px;
+    line-height: 1.3;
+    font-weight: bold;
+    margin-left: 10px;
+    color: black;
+
+}
+.news-aside-link:hover {
+    text-decoration: underline;
+    color: black;
+    text-decoration-color: #ff2210;
+
+}
 
 
 /************
