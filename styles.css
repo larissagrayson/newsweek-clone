@@ -1,10 +1,10 @@
 
 
-.top {
-    background: purple;
-}
 
 
+/****
+Start of styling for nav header
+******/
 .navbar {
   
    border: 2px solid red;
@@ -34,7 +34,7 @@
 }
 
 
-
+/*
 .test {
     border: 2px solid purple;
 }
@@ -43,7 +43,7 @@
     border: 2px solid red;
     width: 100%;
 }
-
+*/
 
 
 
@@ -56,9 +56,9 @@ start here
 ****************/
 
 
-/**************
-layout for 3 columns
-***************/
+/*************************************************
+     Grid Layout for 3 Columns Top News Section
+**************************************************/
 .main {
     display: grid;
     
@@ -92,13 +92,11 @@ layout for 3 columns
 
 .debate {
     grid-area: debate;
-    
 }
 
-
-/************
-Card Styling
-*************/
+/***********************************
+    Bootstrap Card Custom Styling
+************************************/
 .card{
     background-color: transparent;
     border: none;
@@ -158,15 +156,11 @@ Card Styling
     padding: 8px 15px 9px;
     color: #ff2210;
     font-weight: bold;
-
 }
 
-
-
-
-/******** 
-My Turn Section 
-************/
+/********************** 
+    My Turn Section 
+**********************/
 
 .myturn .card-title {
     color:  rgba(3,3,3, 0.4);
@@ -175,9 +169,9 @@ My Turn Section
     font-weight: bold;
 }
 
-/*****
-More Stories
-***************************/
+/***************************
+    More Stories Section
+****************************/
 .story-item {
     border-bottom: 1px solid #ddd;
     margin: 10px 0;
@@ -192,7 +186,6 @@ More Stories
     font-weight: 700;
     font-size: 17px;
     line-height: 20px;
-  
 }
 
 .story-item .title:hover {
@@ -206,9 +199,10 @@ More Stories
     line-height: 20px;
     color: #333;
 }
-/*********
-Debate & Opinion Section
-*************/
+
+/*****************************
+    Debate & Opinion Section
+******************************/
 .debate-title {
     padding-bottom: 10px;
     border-bottom: 4px solid #d9d9d9;
@@ -297,9 +291,9 @@ Debate & Opinion Section
 }
 
 
-/*****************
-Magazine Section
-******************/
+/***********************
+    Magazine Section
+***********************/
 
 .n-section-title {
     color: black;
@@ -322,14 +316,6 @@ Magazine Section
     left: 0;
 }
 
-/*
-.featured-cat {
-    display: inline-block;
-    position: relative;
-    z-index: 2;
-    bottom: 30px;
-}*/
-
 .featured-cat:hover {
     text-decoration: none;
 }
@@ -341,7 +327,6 @@ Magazine Section
     padding: 2px;
     color: #ff2210;
     font-weight: bold;
-
 }
 
 .featured-link {
@@ -353,10 +338,6 @@ Magazine Section
     font-size: 15px;
     font-weight: bold;
     background: #f4f5f6;
-
-  /*  position: relative;
-    z-index: 3;
-    bottom: 28px;*/
 }
 
 .featured-link:hover {
@@ -397,9 +378,9 @@ Magazine Section
     text-decoration:none;
 }
 
-/*********
-News Sections
-************/
+/*********************
+    News Sections
+**********************/
 
 .news-section {
     margin-bottom: 50px;
@@ -438,9 +419,9 @@ News Sections
 }
 
 
-/**********
-Subscribe and Advertise Row 
-************/
+/**********************************
+    Subscribe and Advertise Row 
+************************************/
 
 .subscribe-newsletter .header {
     color: #ff2210;
@@ -448,7 +429,7 @@ Subscribe and Advertise Row
     font-size: 16px;
     font-weight:bold;
     padding-left: 0;
-    margin-bottom: 11px;
+    margin: 11px 0;
    
 }
 .subscription-wrapper {
@@ -457,6 +438,7 @@ Subscribe and Advertise Row
     align-items: center;
     grid-gap: 20px;
     grid-template-columns: 1fr 2fr;    
+    padding-bottom: 28px;
 }
 
 .subscription-img-wrapper {
@@ -492,20 +474,17 @@ Subscribe and Advertise Row
     font-weight: bold;
 }
 
-.newsletter-wrapper {
-  
-    border: 1px solid #ebebeb;
-    display: grid;
-    grid-gap: 20px;
-    align-items: center;
-   
-    grid-template-columns: 1fr 1fr;
-    
-    
+.subscribe-btn:hover {
+    color: white;
 }
 
-
-
+.newsletter-wrapper {
+    border: 1px solid #ebebeb;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    grid-gap: 20px;
+}
 
 .newsletter-img {
     background: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png");
@@ -540,7 +519,6 @@ Subscribe and Advertise Row
     background-color: white;
     border: 1px solid #e0e1e1;
     text-indent: 9px;
- 
 }
 
 .form-btn {
@@ -555,8 +533,96 @@ Subscribe and Advertise Row
     font-weight: bold;
 }
 
+.form-btn:hover {
+    color: white;
+}
 
 
+/****
+footer
+******/
+
+.footer-top {
+    margin-bottom: 12px;
+}
+
+.copyright {
+    color: #666;
+    text-transform: uppercase;
+}
+
+.social-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-links li {
+    display:inline-block;
+    margin: 0 5px;
+}
+
+.social-links a {
+    color: #666;
+}
+
+.facebook:hover {
+    color:  #3b5998;
+}
+
+.twitter:hover {
+    color: #1DA1F2;
+}
+
+.instagram:hover {
+    color: #405de6;
+}
+
+.tumblr:hover {
+    color: #34526f;
+}
+
+.linkedin:hover{
+    color: #0072b1;
+}
+
+.footer-bottom {
+    border-top: 1px solid #d9d9d9;
+    padding-top: 6px;
+}
+
+.editions,
+.footer-links {
+    list-style-type: none;
+   padding: 0;
+   font-size: 14px;
+}
+
+.editions li,
+.footer-links li {
+    display: inline-block;
+    border-right: 1px solid #d9d9d9;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.editions .label {
+    border: none;
+    font-weight: bold;
+    margin-right: 5px;
+    padding-right: 5px;
+}
+
+.editions li a,
+.footer-links li a {
+    color: #666;
+    text-decoration: none;
+}
+
+.editions li a:hover,
+.footer-links li a:hover {
+    color: #333;
+}
 
 /************
 Media Queries
@@ -567,6 +633,8 @@ Media Queries
         max-width: 100%;
     }
  }
+
+
 @media (max-width: 767.98px)
 {
     .weather-date {
@@ -582,6 +650,10 @@ Media Queries
         "myturn"
         "culture-travel"
         "more-stories";
+    }
+
+    .footer-top > * {
+        border: 2px solid green;
     }
 
     
