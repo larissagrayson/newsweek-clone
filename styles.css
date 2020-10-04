@@ -54,12 +54,15 @@ Start of styling for nav header
 /****************
 start here
 ****************/
-
+body {
+    background: #f4f5f6;
+}
 
 /*************************************************
      Grid Layout for 3 Columns Top News Section
 **************************************************/
 .main {
+    background: white;
     display: grid;
     
     grid-template-columns: 1fr 2fr 1fr;
@@ -295,6 +298,10 @@ start here
     Magazine Section
 ***********************/
 
+.magazine {
+    background: white;
+}
+
 .n-section-title {
     color: black;
     font-size: 19px;
@@ -326,7 +333,7 @@ start here
     background: rgba(255, 255, 255, 0.9);
     padding: 2px;
     color: #ff2210;
-    font-weight: bold;
+
 }
 
 .featured-link {
@@ -338,6 +345,7 @@ start here
     font-size: 15px;
     font-weight: bold;
     background: #f4f5f6;
+    margin-bottom: 5px;
 }
 
 .featured-link:hover {
@@ -379,11 +387,18 @@ start here
 }
 
 /*********************
+    Editor's Pick
+**********************/
+.editors-pick {
+    background: white;
+}
+
+/*********************
     News Sections
 **********************/
 
 .news-section {
-    margin-bottom: 50px;
+    background: white;
 }
 
 .news-section-header a {
@@ -422,6 +437,11 @@ start here
 /**********************************
     Subscribe and Advertise Row 
 ************************************/
+.subscribe-newsletter {
+   background: white;
+   padding-bottom: 30px;
+   border-bottom: 3px solid #f4f5f6;
+}
 
 .subscribe-newsletter .header {
     color: #ff2210;
@@ -445,6 +465,7 @@ start here
     position: relative;
     padding-bottom: 13px;
     padding-right: 90px;
+    margin: 20px 0 0 20px;
  
 }
 
@@ -541,7 +562,10 @@ start here
 /****
 footer
 ******/
-
+footer {
+    background: white;
+    padding-top: 30px
+}
 .footer-top {
     margin-bottom: 12px;
 }
@@ -652,8 +676,23 @@ Media Queries
         "more-stories";
     }
 
-    .footer-top > * {
-        border: 2px solid green;
+
+    .footer-top,
+    .footer-logo {
+        flex-direction: column;
+        align-items:flex-start !important; 
+    }
+
+    .footer-social,
+    .copyright {
+        margin-top: 5px;
+    }
+
+
+
+    .editions li,
+    .footer-links li {
+        border: none;
     }
 
     
