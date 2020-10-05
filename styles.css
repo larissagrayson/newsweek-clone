@@ -10,27 +10,57 @@ Start of styling for nav header
    border: 2px solid red;
 }
 
-.header-top{
-    border: 2px dashed blue;
-    background: red;
+.navbar-top{
+    background: #f72210;
+ 
 }
 
-.header-links {
-    border: 2px solid orange;
+.small-logo {
+    display: none;
 }
 
-.subscribe-login button {
+.weather-date {
+    color: white;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.weather {
+    font-weight: bold;
+    margin: 10px 0px;   
+}
+
+.weather a {
+    text-decoration: none;
+    color: white;
+}
+
+.date {
+    font-size: 15px;
+}
+
+.navbar-bottom {
+    background: lightblue;
+}
+
+
+.user-icon {
+   display: none !important;
+}
+
+.login {
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.subscribe {
     background: #ffe400;
     color: black;
     font-weight: 600;
-   
-   
+    text-transform: uppercase;
     border-radius: 24px;
-}
-
-.login-btn {
-    color: white;
-    font-weight: 600;
 }
 
 
@@ -653,17 +683,48 @@ Media Queries
 ***************/
 @media (max-width: 991.98px) { 
 
+
+    .navbar-right-top {
+        display: flex;
+        align-items: center;
+    }
+    .navbar-brand {
+        display: none;
+    }
+
+    .small-logo {
+        display: inline-block;
+        align-self: center;
+    }
+
+    .weather-date {
+        display: none;
+    }
+
+    /*
+    .navbar-bottom {
+        width: 200px !important; 
+        align-self: flex-end;
+    } */
+
+ 
+
     .newsletter-img {
         max-width: 100%;
     }
  }
 
 
-@media (max-width: 767.98px)
-{
-    .weather-date {
+@media (max-width: 767.98px){
+
+    .user-icon {
+        display: inline-block !important;
+    }
+
+    .login-text {
         display: none;
     }
+
 
     .main {
         grid-template-columns: 1fr;
