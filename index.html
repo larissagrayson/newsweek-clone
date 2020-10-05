@@ -8,12 +8,13 @@
      <!-- Bootstrap CSS file -->
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
      <link rel="stylesheet" href="styles.css">
+     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"> 
      <script src="https://kit.fontawesome.com/5af4f9d41a.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
     
-    <div class="container p-0">
+    <div class="nav-container container p-0">
         <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex flex-column  p-0">
             <div class="navbar-top w-100 d-flex justify-content-between align-items-end">
 
@@ -23,7 +24,7 @@
 
                 <div class="weather-date">
                     <p class="weather"><i class="fas fa-cloud-sun"></i><a href="https://www.newsweek.com/weather"> 59 &deg; Piscataway, NJ ></a>  </p>
-                    <p class="date">Tue, Sep 29 2020</p>
+                    <p class="date">Mon, Oct 05, 2020</p>
                 </div>
 
                 <a class="navbar-brand" href="#"><img src="images/navbar-logo-large.png"></a>
@@ -41,14 +42,14 @@
             </div>
 
             <div class="navbar-bottom w-100 collapse navbar-collapse" id="navbarMenu">
-                <div class="navbar-wrapper d-flex flex-column">
+                <div class="navbar-wrapper d-flex flex-column w-100">
 
-                    <ul class="navbar-nav">
+                    <ul class="nav-news navbar-nav d-flex justify-content-around">
                         <li class="nav-item">
                             <a href="#" class="nav-link">U.S.</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">World</a>
+                            <a href="#" class="nav-link m-0">World</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">Tech & Science</a>
@@ -76,9 +77,14 @@
                         </li>
                     </ul>
 
-                    <ul class="navbar-nav">
-                        <li class="nav-item"> Trending </li>
-                        <li class="nav-item"><a href="#" class="nav-link">Donald Trump</a></li>
+                 
+                    <div class="hr"></div>
+
+                    <ul class="nav-trending navbar-nav m-2">
+                        <li class="nav-item mt-2">Trending </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Donald Trump</a>
+                        </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">Joe Biden</a>
                         </li>
@@ -101,7 +107,7 @@
 
 
     <div class="container">
-        <div class="row">
+        <div class="row  main-page">
             <div class="main col-12">
                 <div class="featured">
                     <h1 class="section-title">Featured Stories </h1>

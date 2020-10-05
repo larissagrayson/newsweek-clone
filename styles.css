@@ -1,17 +1,22 @@
-
+/*************************
+    Simple Reset
+*************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
 
 
 /****
 Start of styling for nav header
 ******/
-.navbar {
-  
-   border: 2px solid red;
-}
 
 .navbar-top{
     background: #f72210;
+    padding: 10px;
+  
  
 }
 
@@ -21,13 +26,11 @@ Start of styling for nav header
 
 .weather-date {
     color: white;
-    margin-left: 20px;
-    font-size: 15px;
+    line-height: 1;
 }
 
 .weather {
     font-weight: bold;
-    margin: 10px 0px;   
 }
 
 .weather a {
@@ -39,9 +42,10 @@ Start of styling for nav header
     font-size: 15px;
 }
 
-.navbar-bottom {
-    background: lightblue;
+.navbar-right-top {
+    margin: 10px 0px;
 }
+
 
 
 .user-icon {
@@ -64,20 +68,82 @@ Start of styling for nav header
 }
 
 
-/*
-.test {
-    border: 2px solid purple;
+
+.navbar-bottom {
+   background: white;
+   padding: 20px 10px;
 }
 
-.test-a img {
-    border: 2px solid red;
+
+
+.nav-news .nav-link {
+    color: black !important;
+    font-weight: bold;
+    text-align: center;
+    font-size: 19px;
+    padding: 0 10px;
+}
+
+.nav-news .nav-link:hover,
+.nav-trending .nav-link:hover {
+    color: #f72210 !important;
+}
+
+.nav-news .nav-item {
+    border-right:1px solid #d9d9d9;
+    padding-right: 15px;
+
+}
+
+
+.nav-news .nav-item:last-of-type {
+    border: none;
+}
+
+.nav-trending {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+.hr {
+   content: '';
+   height: 5px;
+   padding-top: 15px;
+   border-bottom: 2px solid #f4f5f7;
+}
+
+.navbar {
+    border-bottom: 1px solid #dbdbdb;
+}
+
+
+.nav-container:after {
+    display: block;
+    content:'';
+    height: 15px;
+    background: linear-gradient(to right, #e8e8e8, #ffffff);
+}
+
+
+
+
+
+
+.main-page:before {
+    display: block;
+    content:'';
     width: 100%;
+    height: 10px;
+    background:white;
+    border-bottom: 2px solid #f4f5f6;
 }
-*/
-
-
-
-
 
 
 
@@ -86,6 +152,7 @@ start here
 ****************/
 body {
     background: #f4f5f6;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 /*************************************************
