@@ -71,7 +71,7 @@ Start of styling for nav header
 
 .navbar-bottom {
    background: white;
-   padding: 20px 10px;
+   padding: 20px 10px 0px 10px;
 }
 
 
@@ -98,6 +98,10 @@ Start of styling for nav header
 
 .nav-news .nav-item:last-of-type {
     border: none;
+}
+
+.arrow {
+    display: none;
 }
 
 .nav-trending {
@@ -661,7 +665,8 @@ footer
 ******/
 footer {
     background: white;
-    padding-top: 30px
+    padding-top: 30px;
+    font-family: "Arial","Helvetica", sans-serif;
 }
 .footer-top {
     margin-bottom: 12px;
@@ -768,6 +773,43 @@ Media Queries
         display: none;
     }
 
+
+    .navbar-bottom {
+        width: 40% !important;
+        align-self: flex-end !important;
+        justify-content: flex-start !important;
+    }
+
+  
+
+    .nav-news .nav-item{
+        width: 100%;
+        border: none;
+    }
+
+
+    .nav-news .nav-link {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .nav-news .nav-link:hover {
+        background: black;
+        color: white !important;
+    }
+
+    .arrow {
+        display: inline-block;
+    }
+
+    .nav-news .nav-link:hover .arrow {
+        color: red;
+    }
+
+
+
+
     /*
     .navbar-bottom {
         width: 200px !important; 
@@ -791,6 +833,7 @@ Media Queries
     .login-text {
         display: none;
     }
+
 
 
     .main {
@@ -825,5 +868,4 @@ Media Queries
 
     
 }
-
 
