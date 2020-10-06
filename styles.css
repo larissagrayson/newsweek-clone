@@ -418,6 +418,10 @@ featured  -- scroll bar  ****!!!!
 .opinion .journalist {
    font-weight: bold;
 }
+
+.journalist a {
+    color: #666;
+}
     
 .opposer {
     flex-direction: row-reverse;
