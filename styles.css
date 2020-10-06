@@ -180,15 +180,14 @@ body {
 .main {
     background: white;
     display: grid;
+    grid-gap: 20px;
     
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1.5fr 1fr;
     grid-template-areas: 
         "featured top-story debate"
-        "featured middle debate"
-      /*  "featured myturn debate"
+        "featured myturn debate"
         "featured culture-travel debate"
-        "featured more-stories debate";*/
-
+        "featured more-stories debate";
    
 }
 
@@ -201,7 +200,7 @@ body {
     grid-area: top-story;
 }
 
-/*.myturn {
+.myturn {
     grid-area: myturn;
 }
 
@@ -211,11 +210,8 @@ body {
 
 .more-stories {
     grid-area: more-stories;
-}*/
-
-.middle-column-wrapper {
-    grid-area: middle;
 }
+
 
 .debate {
     grid-area: debate;
@@ -332,17 +328,31 @@ featured  -- scroll bar  ****!!!!
     font-weight: bold;
 }
 
+.myturn-card:hover {
+    text-decoration: none;
+}
+
 /***************************
     More Stories Section
 ****************************/
 .story-item {
     border-bottom: 1px solid #ddd;
-    margin: 10px 0;
+    margin-bottom: 10px;
+    clear: both;
+    min-height: 115px;
+
 }
+
 
 .story-item:last-of-type {
     border-bottom: none;
     
+}
+
+.story-item-image {
+    float: left;
+    margin: 5px 15px 0 0;
+  
 }
 .story-item .title {
     color: black;
