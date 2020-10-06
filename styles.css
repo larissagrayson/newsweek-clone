@@ -946,10 +946,11 @@ Media Queries
     }
 
     .featured-content-wrapper,
-.debate-content-wrapper {
+    .debate-content-wrapper {
     overflow-y: visible;
     height: auto;
 }
+
 
   
    /* .opinion-item {
