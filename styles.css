@@ -182,8 +182,11 @@ body {
         "featured top-story debate"
         "featured myturn debate"
         "featured culture-travel debate"
-        "featured more-stories debate"
+        "featured more-stories debate";
+
+   
 }
+
 
 .featured {
     grid-area: featured;
@@ -208,6 +211,36 @@ body {
 .debate {
     grid-area: debate;
 }
+
+/***********
+featured  -- scroll bar  ****!!!!
+**********/
+.featured-content-wrapper,
+.debate-content-wrapper {
+   height: 2800px;
+   overflow-y: scroll;
+   /* overflow: scroll;*/
+}
+
+ /* Hide scrollbar for Chrome, Safari and Opera */
+ .featured-content-wrapper::-webkit-scrollbar,
+ .debate-content-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .featured-content-wrapper,
+  .debate-content-wrapper {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  } 
+
+  .middle-column-wrapper {
+      height: 100%;
+  }
+
+ 
+  
 
 /***********************************
     Bootstrap Card Custom Styling
@@ -260,6 +293,7 @@ body {
     left: 0;
 }
 
+
 .img-cat:hover {
     text-decoration: none;
 }
@@ -272,6 +306,11 @@ body {
     color: #ff2210;
     font-weight: bold;
 }
+
+.cat-blue span {
+    color: #3581f4;
+}
+
 
 /********************** 
     My Turn Section 
@@ -873,6 +912,13 @@ Media Queries
         "more-stories";
     }
 
+    .featured-content-wrapper,
+.debate-content-wrapper {
+    overflow-y: visible;
+    height: auto;
+}
+
+  
     .opinion-item {
         justify-content: flex-start;
     }
