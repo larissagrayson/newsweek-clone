@@ -9,9 +9,9 @@
 
 
 
-/****
-Start of styling for nav header
-******/
+/***********************
+    Navbar Styling
+************************/
 
 .navbar-top{
     background: #f72210;
@@ -45,8 +45,6 @@ Start of styling for nav header
 .navbar-right-top {
     margin: 10px 0px;
 }
-
-
 
 .user-icon {
    display: none !important;
@@ -121,12 +119,6 @@ Start of styling for nav header
 }
 
 
-
-
-
-
-
-
 .hr {
    content: '';
    height: 5px;
@@ -145,11 +137,6 @@ Start of styling for nav header
     height: 15px;
     background: linear-gradient(to right, #e8e8e8, #ffffff);
 }
-
-
-
-
-
 
 .main-page:before {
     display: block;
@@ -512,6 +499,7 @@ featured  -- scroll bar  ****!!!!
   
 }
 
+/* Stylings for Magazine cover */
 .wrapper {
     position: relative;
 }
@@ -553,13 +541,16 @@ featured  -- scroll bar  ****!!!!
     background:#ddd;
 }
 
+/* Regular items */
+
 .magazine-item .title {
     display: inline-block;
     color: black;
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
-    margin-top: 5px;
+   margin-top: 5px;
+
 }
 
 .magazine-item .title:hover {
@@ -605,7 +596,7 @@ featured  -- scroll bar  ****!!!!
     padding-top: 25px;
     padding-bottom: 11px;
     color: #ff2210;
-    font-size: 16px;
+    font-size: 20px;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
@@ -617,12 +608,28 @@ featured  -- scroll bar  ****!!!!
     font-size: 18px;
 }
 
+.news-aside-item {
+    display: flex;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 10px 2px;
+}
+
+.news-aside-item:last-of-type {
+    border: none;
+}
+
+.news-aside-img {
+    max-width: 100px;
+    flex: 1;
+}
+
 .news-aside-link {
     font-size: 15px;
     line-height: 1.3;
     font-weight: bold;
     margin-left: 10px;
     color: black;
+    flex: 2;
 
 }
 .news-aside-link:hover {
