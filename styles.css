@@ -8,6 +8,18 @@
   }
 
 
+/********************************
+  Body and Main Page Container
+*********************************/
+
+body {
+    background: #f4f5f6;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.custom-container {
+    width: 80% !important;
+}
 
 /***********************
     Navbar Styling
@@ -16,8 +28,6 @@
 .navbar-top{
     background: #f72210;
     padding: 10px;
-  
- 
 }
 
 .small-logo {
@@ -56,7 +66,6 @@
     text-transform: uppercase;
 }
 
-
 .subscribe {
     background: #ffe400;
     color: black;
@@ -66,13 +75,10 @@
     margin-right: 15px;
 }
 
-
-
 .navbar-bottom {
    background: white;
    padding: 20px 10px 0px 10px;
 }
-
 
 .nav-news .nav-link {
     color: black !important;
@@ -98,7 +104,6 @@
 .search-text {
     display: inline-block;
     color: rgba(0, 0, 0, 0.55);
-    
 }
 
 .fa-search {
@@ -111,13 +116,10 @@
     display: none;
 }
 
-
-
 .nav-trending {
     text-transform: uppercase;
     font-weight: bold;
 }
-
 
 .hr {
    content: '';
@@ -129,7 +131,6 @@
 .navbar {
     border-bottom: 1px solid #dbdbdb;
 }
-
 
 .nav-container:after {
     display: block;
@@ -148,19 +149,6 @@
 }
 
 
-
-/****************
-start here
-****************/
-body {
-    background: #f4f5f6;
-    font-family: "Roboto Condensed", sans-serif;
-}
-
-.custom-container {
-    width: 80% !important;
- }
-
 /*************************************************
      Grid Layout for 3 Columns Top News Section
 **************************************************/
@@ -168,16 +156,13 @@ body {
     background: white;
     display: grid;
     grid-gap: 20px;
-    
     grid-template-columns: 1fr 1.5fr 1fr;
     grid-template-areas: 
         "featured top-story debate"
         "featured myturn debate"
         "featured culture-travel debate"
         "featured more-stories debate";
-   
 }
-
 
 .featured {
     grid-area: featured;
@@ -199,19 +184,17 @@ body {
     grid-area: more-stories;
 }
 
-
 .debate {
     grid-area: debate;
 }
 
-/***********
-featured  -- scroll bar  ****!!!!
-**********/
+/***********************************
+ Scrolling for Left & Right Columns
+************************************/
 .featured-content-wrapper,
 .debate-content-wrapper {
    height: 2800px;
    overflow-y: scroll;
-   /* overflow: scroll;*/
 }
 
  /* Hide scrollbar for Chrome, Safari and Opera */
@@ -229,10 +212,7 @@ featured  -- scroll bar  ****!!!!
 
   .middle-column-wrapper {
       height: 100%;
-  }
-
- 
-  
+}
 
 /***********************************
     Bootstrap Card Custom Styling
@@ -285,7 +265,6 @@ featured  -- scroll bar  ****!!!!
     left: 0;
 }
 
-
 .img-cat:hover {
     text-decoration: none;
 }
@@ -302,7 +281,6 @@ featured  -- scroll bar  ****!!!!
 .cat-blue span {
     color: #3581f4;
 }
-
 
 /********************** 
     My Turn Section 
@@ -327,9 +305,7 @@ featured  -- scroll bar  ****!!!!
     margin-bottom: 10px;
     clear: both;
     min-height: 115px;
-
 }
-
 
 .story-item:last-of-type {
     border-bottom: none;
@@ -373,7 +349,6 @@ featured  -- scroll bar  ****!!!!
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
-  
 }
 
 .opinion-item {
@@ -399,7 +374,6 @@ featured  -- scroll bar  ****!!!!
     text-decoration: underline;
     color: black;
     text-decoration-color: #ff2210;
-
 }
 
 .debate .byline,
@@ -408,7 +382,6 @@ featured  -- scroll bar  ****!!!!
     color: #555;
     font-size: 14px;
     line-height: 21px;
-
 }
 
 .debate .journalist,
@@ -499,7 +472,7 @@ featured  -- scroll bar  ****!!!!
   
 }
 
-/* Stylings for Magazine cover */
+/* Stylings for magazine cover */
 .wrapper {
     position: relative;
 }
@@ -520,7 +493,6 @@ featured  -- scroll bar  ****!!!!
     background: rgba(255, 255, 255, 0.9);
     padding: 2px;
     color: #ff2210;
-
 }
 
 .featured-link {
@@ -542,15 +514,13 @@ featured  -- scroll bar  ****!!!!
 }
 
 /* Regular items */
-
 .magazine-item .title {
     display: inline-block;
     color: black;
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
-   margin-top: 5px;
-
+    margin-top: 5px;
 }
 
 .magazine-item .title:hover {
@@ -603,7 +573,6 @@ featured  -- scroll bar  ****!!!!
     border-top: 1px solid #d9d9d9;
 }
 
-
 .news {
     font-size: 18px;
 }
@@ -636,9 +605,7 @@ featured  -- scroll bar  ****!!!!
     text-decoration: underline;
     color: black;
     text-decoration-color: #ff2210;
-
 }
-
 
 /**********************************
     Subscribe and Advertise Row 
@@ -672,7 +639,6 @@ featured  -- scroll bar  ****!!!!
     padding-bottom: 13px;
     padding-right: 90px;
     margin: 20px 0 0 20px;
- 
 }
 
 .cover-current {
@@ -766,10 +732,9 @@ featured  -- scroll bar  ****!!!!
     color: white;
 }
 
-
-/****
-footer
-******/
+/******************
+    Footer
+*******************/
 footer {
     background: white;
     padding-top: 30px;
@@ -857,12 +822,12 @@ footer {
     color: #333;
 }
 
-/************
-Media Queries
-***************/
+/********************
+    Media Queries
+*********************/
 @media (max-width: 991.98px) { 
 
-
+    /* Navbar */
     .navbar-right-top {
         display: flex;
         align-items: center;
@@ -880,20 +845,16 @@ Media Queries
         display: none;
     }
 
-
     .navbar-bottom {
         width: 40% !important;
         align-self: flex-end !important;
         justify-content: flex-start !important;
     }
 
-  
-
     .nav-news .nav-item{
         width: 100%;
         border: none;
     }
-
 
     .nav-news .nav-link {
         display: flex;
@@ -926,17 +887,7 @@ Media Queries
        padding-bottom: 10px;
     }
 
-
-
-
-    /*
-    .navbar-bottom {
-        width: 200px !important; 
-        align-self: flex-end;
-    } */
-
- 
-
+    /* Newsletter */
     .newsletter-img {
         max-width: 100%;
     }
@@ -945,6 +896,7 @@ Media Queries
 
 @media (max-width: 767.98px){
 
+    /* Navbar */
     .user-icon {
         display: inline-block !important;
     }
@@ -953,8 +905,7 @@ Media Queries
         display: none;
     }
 
-
-
+    /* Main 3-col container */
     .main {
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -971,14 +922,7 @@ Media Queries
     overflow-y: visible;
     height: auto;
 }
-
-
-  
-   /* .opinion-item {
-        justify-content: flex-start;
-    }*/
-
-
+    /* Footer */
     .footer-top,
     .footer-logo {
         flex-direction: column;
@@ -990,13 +934,10 @@ Media Queries
         margin-top: 5px;
     }
 
-
-
     .editions li,
     .footer-links li {
         border: none;
     }
 
-    
 }
 
