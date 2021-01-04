@@ -7,6 +7,8 @@
 
 **OBJECTIVE:** The purpose of this project was to build a responsive website for PC, tablet, and smartphone utilizing the Bootstrap Framework.  The project recreates the homepage of [Newsweek](https://www.newsweek.com/). It is laid out using a combination of Bootstrap, CSS Grid, and Flexbox.
 
+A live demo of this page can be viewed [here](https://larissagrayson.github.io/newsweek-clone/).
+
 **SKILLS DEMONSTRATED:**
 * Bootsrap
 * CSS Grid
